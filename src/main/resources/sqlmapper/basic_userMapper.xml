@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="ams.dao.IBasicUserDao">
+
+    <!--添加-->
+	<insert id="add" parameterType="java.util.HashMap">
+		insert into `basic_user`
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="userId != null">
+					user_id,
+				</if>
+				<if test="state != null">
+					state,
+				</if>
+				<if test="userName != null">
+					user_name,
+				</if>
+				<if test="userMobile != null">
+					user_mobile,
+				</if>
+				<if test="password != null">
+					password,
+				</if>
+				<if test="createUserName != null">
+					create_user_name,
+				</if>
+				<if test="createTime != null">
+					create_time,
+				</if>
+				<if test="editUserName != null">
+					edit_user_name,
+				</if>
+				<if test="editTime != null">
+					edit_time,
+				</if>
+				<if test="flgDelete != null">
+					flg_delete,
+				</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="userId != null">
+					#{userId},
+				</if>
+				<if test="state != null">
+					#{state},
+				</if>
+				<if test="userName != null">
+					#{userName},
+				</if>
+				<if test="userMobile != null">
+					#{userMobile},
+				</if>
+				<if test="password != null">
+					#{password},
+				</if>
+				<if test="createUserName != null">
+					#{createUserName},
+				</if>
+				<if test="createTime != null">
+					#{createTime},
+				</if>
+				<if test="editUserName != null">
+					#{editUserName},
+				</if>
+				<if test="editTime != null">
+					#{editTime},
+				</if>
+				<if test="flgDelete != null">
+					#{flgDelete},
+				</if>
+		</trim>
+	</insert>
+
+    <!--删除-->
+	<delete id="delete" parameterType="java.util.HashMap">
+		delete from `basic_user`
+		<where>
+            <if test="userId != null">
+                and user_id=#{userId}
+            </if>
+            <if test="userId == null">
+                and 1 = 0
+            </if>
+		</where>
+	</delete>
+
+    <!--更新-->
+	<update id="update" parameterType="java.util.HashMap">
+		update `basic_user`
+		<trim prefix="set" suffixOverrides=",">
+				<if test="userId != null">
+					user_id=#{userId},
+				</if>
+				<if test="state != null">
+					state=#{state},
+				</if>
+				<if test="userName != null">
+					user_name=#{userName},
+				</if>
+				<if test="userMobile != null">
+					user_mobile=#{userMobile},
+				</if>
+				<if test="password != null">
+					password=#{password},
+				</if>
+				<if test="createUserName != null">
+					create_user_name=#{createUserName},
+				</if>
+				<if test="createTime != null">
+					create_time=#{createTime},
+				</if>
+				<if test="editUserName != null">
+					edit_user_name=#{editUserName},
+				</if>
+				<if test="editTime != null">
+					edit_time=#{editTime},
+				</if>
+				<if test="flgDelete != null">
+					flg_delete=#{flgDelete},
+				</if>
+		</trim>
+		<where>
+            <if test="userId != null">
+                and user_id=#{userId}
+            </if>
+            <if test="userId == null">
+                and 1 = 0
+            </if>
+		</where>
+	</update>
+
+    <!--固定条件查询-->
+	<select id="select" parameterType="java.util.HashMap"
+		resultType="java.util.LinkedHashMap">
+			select 
+				user_name as "userName",
+				user_mobile as "userMobile",
+				create_user_name as "createUserName",
+				create_time as "createTime",
+				user_id as "userId"
+			from `basic_user`
+			<where>
+					<if test="userId != null">
+						and user_id=#{userId}
+					</if>
+					<if test="state != null">
+						and state=#{state}
+					</if>
+					<if test="userName != null">
+						and user_name=#{userName}
+					</if>
+					<if test="userMobile != null">
+						and user_mobile=#{userMobile}
+					</if>
+					<if test="password != null">
+						and password=#{password}
+					</if>
+					<if test="createUserName != null">
+						and create_user_name=#{createUserName}
+					</if>
+					<if test="createTime != null">
+						and create_time=#{createTime}
+					</if>
+					<if test="editUserName != null">
+						and edit_user_name=#{editUserName}
+					</if>
+					<if test="editTime != null">
+						and edit_time=#{editTime}
+					</if>
+					<if test="flgDelete != null">
+						and flg_delete=#{flgDelete}
+					</if>
+			</where>
+			<if test="orderStr != '' and orderStr != null">
+				order by ${orderStr}
+			</if>
+            <if test="start != null and pageSize != null">
+                limit #{start},#{pageSize}
+            </if>
+		
+		
+	</select>
+
+    <!--分页（模糊查询的公共条件）-->
+    <sql id="likeSelectConditions">
+                <if test="userName != null and userName != '' ">
+                and user_name <![CDATA[=]]> #{userName}
+                </if>
+                <if test="userMobile != null and userMobile != '' ">
+                and user_mobile <![CDATA[=]]> #{userMobile}
+                </if>
+                <if test="createUserName != null and createUserName != '' ">
+                and create_user_name <![CDATA[=]]> #{createUserName}
+                </if>
+                <if test="createTime != null  ">
+                and create_time <![CDATA[=]]> #{createTime}
+                </if>
+    </sql>
+
+    <!--分页（模糊）查询-->
+	<select id="likeSelect" parameterType="java.util.HashMap"
+		resultType="java.util.LinkedHashMap">
+			select
+				user_name as "userName",
+				user_mobile as "userMobile",
+				create_user_name as "createUserName",
+				create_time as "createTime",
+				user_id as "userId"
+
+                from `basic_user`
+			
+			<where>
+                <include refid="likeSelectConditions"/>
+			</where>
+			
+			<if test="orderStr != '' and orderStr != null">
+				order by ${orderStr}
+			</if>
+            <if test="start != null and pageSize != null">
+                limit #{start},#{pageSize}
+            </if>
+		
+		
+	</select>
+
+    <!--分页（模糊）查询条数-->
+	<select id="likeSelectCount" parameterType="java.util.HashMap"
+		resultType="java.lang.Long">
+		select 
+			count(1)
+		from `basic_user`
+		
+		<where>
+            <include refid="likeSelectConditions"/>
+		</where>
+	</select>
+	
+</mapper>

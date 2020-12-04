@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="ams.dao.IAmsClassDao">
+
+    <!--添加-->
+	<insert id="add" parameterType="java.util.HashMap">
+		insert into `ams_class`
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="classId != null">
+					class_id,
+				</if>
+				<if test="classCode != null">
+					class_code,
+				</if>
+				<if test="className != null">
+					class_name,
+				</if>
+				<if test="classType != null">
+					class_type,
+				</if>
+				<if test="classRedit != null">
+					class_redit,
+				</if>
+				<if test="classTime != null">
+					class_time,
+				</if>
+				<if test="createUserName != null">
+					create_user_name,
+				</if>
+				<if test="createTime != null">
+					create_time,
+				</if>
+				<if test="editUserName != null">
+					edit_user_name,
+				</if>
+				<if test="editTime != null">
+					edit_time,
+				</if>
+				<if test="flgDelete != null">
+					flg_delete,
+				</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="classId != null">
+					#{classId},
+				</if>
+				<if test="classCode != null">
+					#{classCode},
+				</if>
+				<if test="className != null">
+					#{className},
+				</if>
+				<if test="classType != null">
+					#{classType},
+				</if>
+				<if test="classRedit != null">
+					#{classRedit},
+				</if>
+				<if test="classTime != null">
+					#{classTime},
+				</if>
+				<if test="createUserName != null">
+					#{createUserName},
+				</if>
+				<if test="createTime != null">
+					#{createTime},
+				</if>
+				<if test="editUserName != null">
+					#{editUserName},
+				</if>
+				<if test="editTime != null">
+					#{editTime},
+				</if>
+				<if test="flgDelete != null">
+					#{flgDelete},
+				</if>
+		</trim>
+	</insert>
+
+    <!--删除-->
+	<delete id="delete" parameterType="java.util.HashMap">
+		delete from `ams_class`
+		<where>
+            <if test="classId != null">
+                and class_id=#{classId}
+            </if>
+            <if test="classId == null">
+                and 1 = 0
+            </if>
+		</where>
+	</delete>
+
+    <!--更新-->
+	<update id="update" parameterType="java.util.HashMap">
+		update `ams_class`
+		<trim prefix="set" suffixOverrides=",">
+				<if test="classId != null">
+					class_id=#{classId},
+				</if>
+				<if test="classCode != null">
+					class_code=#{classCode},
+				</if>
+				<if test="className != null">
+					class_name=#{className},
+				</if>
+				<if test="classType != null">
+					class_type=#{classType},
+				</if>
+				<if test="classRedit != null">
+					class_redit=#{classRedit},
+				</if>
+				<if test="classTime != null">
+					class_time=#{classTime},
+				</if>
+				<if test="createUserName != null">
+					create_user_name=#{createUserName},
+				</if>
+				<if test="createTime != null">
+					create_time=#{createTime},
+				</if>
+				<if test="editUserName != null">
+					edit_user_name=#{editUserName},
+				</if>
+				<if test="editTime != null">
+					edit_time=#{editTime},
+				</if>
+				<if test="flgDelete != null">
+					flg_delete=#{flgDelete},
+				</if>
+		</trim>
+		<where>
+            <if test="classId != null">
+                and class_id=#{classId}
+            </if>
+            <if test="classId == null">
+                and 1 = 0
+            </if>
+		</where>
+	</update>
+
+    <!--固定条件查询-->
+	<select id="select" parameterType="java.util.HashMap"
+		resultType="java.util.LinkedHashMap">
+			select 
+				class_code as "classCode",
+				class_name as "className",
+				class_type as "classType",
+				class_redit as "classRedit",
+				class_time as "classTime",
+				create_user_name as "createUserName",
+				create_time as "createTime",
+				class_id as "classId"
+			from `ams_class`
+			<where>
+					<if test="classId != null">
+						and class_id=#{classId}
+					</if>
+					<if test="classCode != null">
+						and class_code=#{classCode}
+					</if>
+					<if test="className != null">
+						and class_name=#{className}
+					</if>
+					<if test="classType != null">
+						and class_type=#{classType}
+					</if>
+					<if test="classRedit != null">
+						and class_redit=#{classRedit}
+					</if>
+					<if test="classTime != null">
+						and class_time=#{classTime}
+					</if>
+					<if test="createUserName != null">
+						and create_user_name=#{createUserName}
+					</if>
+					<if test="createTime != null">
+						and create_time=#{createTime}
+					</if>
+					<if test="editUserName != null">
+						and edit_user_name=#{editUserName}
+					</if>
+					<if test="editTime != null">
+						and edit_time=#{editTime}
+					</if>
+					<if test="flgDelete != null">
+						and flg_delete=#{flgDelete}
+					</if>
+			</where>
+			<if test="orderStr != '' and orderStr != null">
+				order by ${orderStr}
+			</if>
+            <if test="start != null and pageSize != null">
+                limit #{start},#{pageSize}
+            </if>
+		
+		
+	</select>
+
+    <!--分页（模糊查询的公共条件）-->
+    <sql id="likeSelectConditions">
+                <if test="classCode != null and classCode != '' ">
+                and class_code <![CDATA[=]]> #{classCode}
+                </if>
+                <if test="className != null and className != '' ">
+                and class_name <![CDATA[=]]> #{className}
+                </if>
+                <if test="classType != null and classType != '' ">
+                and class_type <![CDATA[=]]> #{classType}
+                </if>
+                <if test="classRedit != null and classRedit != '' ">
+                and class_redit <![CDATA[=]]> #{classRedit}
+                </if>
+                <if test="classTime != null and classTime != '' ">
+                and class_time <![CDATA[=]]> #{classTime}
+                </if>
+                <if test="createUserName != null and createUserName != '' ">
+                and create_user_name <![CDATA[=]]> #{createUserName}
+                </if>
+                <if test="createTime != null and createTime != '' ">
+                and create_time <![CDATA[=]]> #{createTime}
+                </if>
+    </sql>
+
+    <!--分页（模糊）查询-->
+	<select id="likeSelect" parameterType="java.util.HashMap"
+		resultType="java.util.LinkedHashMap">
+			select
+				class_code as "classCode",
+				class_name as "className",
+				class_type as "classType",
+				class_redit as "classRedit",
+				class_time as "classTime",
+				create_user_name as "createUserName",
+				create_time as "createTime",
+				class_id as "classId"
+
+                from `ams_class`
+			
+			<where>
+                <include refid="likeSelectConditions"/>
+			</where>
+			
+			<if test="orderStr != '' and orderStr != null">
+				order by ${orderStr}
+			</if>
+            <if test="start != null and pageSize != null">
+                limit #{start},#{pageSize}
+            </if>
+		
+		
+	</select>
+
+    <!--分页（模糊）查询条数-->
+	<select id="likeSelectCount" parameterType="java.util.HashMap"
+		resultType="java.lang.Long">
+		select 
+			count(1)
+		from `ams_class`
+		
+		<where>
+            <include refid="likeSelectConditions"/>
+		</where>
+	</select>
+	
+</mapper>

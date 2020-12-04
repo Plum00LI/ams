@@ -1,0 +1,14 @@
+2020-12-05 01:35:58.428 [http-nio-8080-exec-1] ERROR ams.config.AllExceptionHandler -发生系统异常，错误信息为：
+### Error updating database.  Cause: java.sql.SQLException: Field 'depart_id' doesn't have a default value
+### The error may involve ams.dao.IBasicDepartDao.add-Inline
+### The error occurred while setting parameters
+### SQL: insert into `basic_depart`              ( depart_name,                depart_code,                remark,                create_user_name,                create_time )     values ( ?,                ?,                ?,                ?,                ? )
+### Cause: java.sql.SQLException: Field 'depart_id' doesn't have a default value
+; Field 'depart_id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'depart_id' doesn't have a default value
+2020-12-05 01:36:05.378 [http-nio-8080-exec-10] ERROR ams.config.AllExceptionHandler -发生系统异常，错误信息为：
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '' for column 'create_time' at row 1
+### The error may involve ams.dao.IBasicDepartDao.add-Inline
+### The error occurred while setting parameters
+### SQL: insert into `basic_depart`              ( depart_name,                depart_code,                remark,                create_user_name,                create_time )     values ( ?,                ?,                ?,                ?,                ? )
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '' for column 'create_time' at row 1
+; Data truncation: Incorrect datetime value: '' for column 'create_time' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '' for column 'create_time' at row 1

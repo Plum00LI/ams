@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="ams.dao.IAmsStudentDao">
+
+    <!--添加-->
+	<insert id="add" parameterType="java.util.HashMap">
+		insert into `ams_student`
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="studentId != null">
+					student_id,
+				</if>
+				<if test="userId != null">
+					user_id,
+				</if>
+				<if test="studentNo != null">
+					student_no,
+				</if>
+				<if test="studentSex != null">
+					student_sex,
+				</if>
+				<if test="studentAge != null">
+					student_age,
+				</if>
+				<if test="studentMajorId != null">
+					student_major_id,
+				</if>
+				<if test="studentDepartId != null">
+					student_depart_id,
+				</if>
+				<if test="createUserName != null">
+					create_user_name,
+				</if>
+				<if test="createTime != null">
+					create_time,
+				</if>
+				<if test="editUserName != null">
+					edit_user_name,
+				</if>
+				<if test="editTime != null">
+					edit_time,
+				</if>
+				<if test="flgDelete != null">
+					flg_delete,
+				</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="studentId != null">
+					#{studentId},
+				</if>
+				<if test="userId != null">
+					#{userId},
+				</if>
+				<if test="studentNo != null">
+					#{studentNo},
+				</if>
+				<if test="studentSex != null">
+					#{studentSex},
+				</if>
+				<if test="studentAge != null">
+					#{studentAge},
+				</if>
+				<if test="studentMajorId != null">
+					#{studentMajorId},
+				</if>
+				<if test="studentDepartId != null">
+					#{studentDepartId},
+				</if>
+				<if test="createUserName != null">
+					#{createUserName},
+				</if>
+				<if test="createTime != null">
+					#{createTime},
+				</if>
+				<if test="editUserName != null">
+					#{editUserName},
+				</if>
+				<if test="editTime != null">
+					#{editTime},
+				</if>
+				<if test="flgDelete != null">
+					#{flgDelete},
+				</if>
+		</trim>
+	</insert>
+
+    <!--删除-->
+	<delete id="delete" parameterType="java.util.HashMap">
+		delete from `ams_student`
+		<where>
+            <if test="studentId != null">
+                and student_id=#{studentId}
+            </if>
+            <if test="studentId == null">
+                and 1 = 0
+            </if>
+		</where>
+	</delete>
+
+    <!--更新-->
+	<update id="update" parameterType="java.util.HashMap">
+		update `ams_student`
+		<trim prefix="set" suffixOverrides=",">
+				<if test="studentId != null">
+					student_id=#{studentId},
+				</if>
+				<if test="userId != null">
+					user_id=#{userId},
+				</if>
+				<if test="studentNo != null">
+					student_no=#{studentNo},
+				</if>
+				<if test="studentSex != null">
+					student_sex=#{studentSex},
+				</if>
+				<if test="studentAge != null">
+					student_age=#{studentAge},
+				</if>
+				<if test="studentMajorId != null">
+					student_major_id=#{studentMajorId},
+				</if>
+				<if test="studentDepartId != null">
+					student_depart_id=#{studentDepartId},
+				</if>
+				<if test="createUserName != null">
+					create_user_name=#{createUserName},
+				</if>
+				<if test="createTime != null">
+					create_time=#{createTime},
+				</if>
+				<if test="editUserName != null">
+					edit_user_name=#{editUserName},
+				</if>
+				<if test="editTime != null">
+					edit_time=#{editTime},
+				</if>
+				<if test="flgDelete != null">
+					flg_delete=#{flgDelete},
+				</if>
+		</trim>
+		<where>
+            <if test="studentId != null">
+                and student_id=#{studentId}
+            </if>
+            <if test="studentId == null">
+                and 1 = 0
+            </if>
+		</where>
+	</update>
+
+    <!--固定条件查询-->
+	<select id="select" parameterType="java.util.HashMap"
+		resultType="java.util.LinkedHashMap">
+			select 
+				user_id as "userId",
+				student_no as "studentNo",
+				student_sex as "studentSex",
+				student_age as "studentAge",
+				student_major_id as "studentMajorId",
+				student_depart_id as "studentDepartId",
+				create_user_name as "createUserName",
+				create_time as "createTime",
+				student_id as "studentId"
+			from `ams_student`
+			<where>
+					<if test="studentId != null">
+						and student_id=#{studentId}
+					</if>
+					<if test="userId != null">
+						and user_id=#{userId}
+					</if>
+					<if test="studentNo != null">
+						and student_no=#{studentNo}
+					</if>
+					<if test="studentSex != null">
+						and student_sex=#{studentSex}
+					</if>
+					<if test="studentAge != null">
+						and student_age=#{studentAge}
+					</if>
+					<if test="studentMajorId != null">
+						and student_major_id=#{studentMajorId}
+					</if>
+					<if test="studentDepartId != null">
+						and student_depart_id=#{studentDepartId}
+					</if>
+					<if test="createUserName != null">
+						and create_user_name=#{createUserName}
+					</if>
+					<if test="createTime != null">
+						and create_time=#{createTime}
+					</if>
+					<if test="editUserName != null">
+						and edit_user_name=#{editUserName}
+					</if>
+					<if test="editTime != null">
+						and edit_time=#{editTime}
+					</if>
+					<if test="flgDelete != null">
+						and flg_delete=#{flgDelete}
+					</if>
+			</where>
+			<if test="orderStr != '' and orderStr != null">
+				order by ${orderStr}
+			</if>
+            <if test="start != null and pageSize != null">
+                limit #{start},#{pageSize}
+            </if>
+		
+		
+	</select>
+
+    <!--分页（模糊查询的公共条件）-->
+    <sql id="likeSelectConditions">
+                <if test="userId != null and userId != '' ">
+                and user_id <![CDATA[=]]> #{userId}
+                </if>
+                <if test="studentNo != null and studentNo != '' ">
+                and student_no <![CDATA[=]]> #{studentNo}
+                </if>
+                <if test="studentSex != null and studentSex != '' ">
+                and student_sex <![CDATA[=]]> #{studentSex}
+                </if>
+                <if test="studentAge != null and studentAge != '' ">
+                and student_age <![CDATA[=]]> #{studentAge}
+                </if>
+                <if test="studentMajorId != null and studentMajorId != '' ">
+                and student_major_id <![CDATA[=]]> #{studentMajorId}
+                </if>
+                <if test="studentDepartId != null and studentDepartId != '' ">
+                and student_depart_id <![CDATA[=]]> #{studentDepartId}
+                </if>
+                <if test="createUserName != null and createUserName != '' ">
+                and create_user_name <![CDATA[=]]> #{createUserName}
+                </if>
+                <if test="createTime != null  ">
+                and create_time <![CDATA[=]]> #{createTime}
+                </if>
+    </sql>
+
+    <!--分页（模糊）查询-->
+	<select id="likeSelect" parameterType="java.util.HashMap"
+		resultType="java.util.LinkedHashMap">
+			select
+				user_id as "userId",
+				student_no as "studentNo",
+				student_sex as "studentSex",
+				student_age as "studentAge",
+				student_major_id as "studentMajorId",
+				student_depart_id as "studentDepartId",
+				create_user_name as "createUserName",
+				create_time as "createTime",
+				student_id as "studentId"
+
+                from `ams_student`
+			
+			<where>
+                <include refid="likeSelectConditions"/>
+			</where>
+			
+			<if test="orderStr != '' and orderStr != null">
+				order by ${orderStr}
+			</if>
+            <if test="start != null and pageSize != null">
+                limit #{start},#{pageSize}
+            </if>
+		
+		
+	</select>
+
+    <!--分页（模糊）查询条数-->
+	<select id="likeSelectCount" parameterType="java.util.HashMap"
+		resultType="java.lang.Long">
+		select 
+			count(1)
+		from `ams_student`
+		
+		<where>
+            <include refid="likeSelectConditions"/>
+		</where>
+	</select>
+	
+</mapper>

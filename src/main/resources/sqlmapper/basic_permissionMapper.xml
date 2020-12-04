@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="ams.dao.IBasicPermissionDao">
+
+    <!--添加-->
+	<insert id="add" parameterType="java.util.HashMap">
+		insert into `basic_permission`
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+				<if test="permissionId != null">
+					permission_id,
+				</if>
+				<if test="parentId != null">
+					parent_id,
+				</if>
+				<if test="permissionCode != null">
+					permission_code,
+				</if>
+				<if test="permissionName != null">
+					permission_name,
+				</if>
+				<if test="permissionRemark != null">
+					permission_remark,
+				</if>
+				<if test="category != null">
+					category,
+				</if>
+				<if test="uri != null">
+					uri,
+				</if>
+				<if test="createUserName != null">
+					create_user_name,
+				</if>
+				<if test="createTime != null">
+					create_time,
+				</if>
+				<if test="editUserName != null">
+					edit_user_name,
+				</if>
+				<if test="editTime != null">
+					edit_time,
+				</if>
+				<if test="flgDelete != null">
+					flg_delete,
+				</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test="permissionId != null">
+					#{permissionId},
+				</if>
+				<if test="parentId != null">
+					#{parentId},
+				</if>
+				<if test="permissionCode != null">
+					#{permissionCode},
+				</if>
+				<if test="permissionName != null">
+					#{permissionName},
+				</if>
+				<if test="permissionRemark != null">
+					#{permissionRemark},
+				</if>
+				<if test="category != null">
+					#{category},
+				</if>
+				<if test="uri != null">
+					#{uri},
+				</if>
+				<if test="createUserName != null">
+					#{createUserName},
+				</if>
+				<if test="createTime != null">
+					#{createTime},
+				</if>
+				<if test="editUserName != null">
+					#{editUserName},
+				</if>
+				<if test="editTime != null">
+					#{editTime},
+				</if>
+				<if test="flgDelete != null">
+					#{flgDelete},
+				</if>
+		</trim>
+	</insert>
+
+    <!--删除-->
+	<delete id="delete" parameterType="java.util.HashMap">
+		delete from `basic_permission`
+		<where>
+            <if test="permissionId != null">
+                and permission_id=#{permissionId}
+            </if>
+            <if test="permissionId == null">
+                and 1 = 0
+            </if>
+		</where>
+	</delete>
+
+    <!--更新-->
+	<update id="update" parameterType="java.util.HashMap">
+		update `basic_permission`
+		<trim prefix="set" suffixOverrides=",">
+				<if test="permissionId != null">
+					permission_id=#{permissionId},
+				</if>
+				<if test="parentId != null">
+					parent_id=#{parentId},
+				</if>
+				<if test="permissionCode != null">
+					permission_code=#{permissionCode},
+				</if>
+				<if test="permissionName != null">
+					permission_name=#{permissionName},
+				</if>
+				<if test="permissionRemark != null">
+					permission_remark=#{permissionRemark},
+				</if>
+				<if test="category != null">
+					category=#{category},
+				</if>
+				<if test="uri != null">
+					uri=#{uri},
+				</if>
+				<if test="createUserName != null">
+					create_user_name=#{createUserName},
+				</if>
+				<if test="createTime != null">
+					create_time=#{createTime},
+				</if>
+				<if test="editUserName != null">
+					edit_user_name=#{editUserName},
+				</if>
+				<if test="editTime != null">
+					edit_time=#{editTime},
+				</if>
+				<if test="flgDelete != null">
+					flg_delete=#{flgDelete},
+				</if>
+		</trim>
+		<where>
+            <if test="permissionId != null">
+                and permission_id=#{permissionId}
+            </if>
+            <if test="permissionId == null">
+                and 1 = 0
+            </if>
+		</where>
+	</update>
+
+    <!--固定条件查询-->
+	<select id="select" parameterType="java.util.HashMap"
+		resultType="java.util.LinkedHashMap">
+			select 
+				permission_code as "permissionCode",
+				permission_name as "permissionName",
+				permission_remark as "permissionRemark",
+				category as "category",
+				uri as "uri",
+				create_user_name as "createUserName",
+				create_time as "createTime",
+				permission_id as "permissionId"
+			from `basic_permission`
+			<where>
+					<if test="permissionId != null">
+						and permission_id=#{permissionId}
+					</if>
+					<if test="parentId != null">
+						and parent_id=#{parentId}
+					</if>
+					<if test="permissionCode != null">
+						and permission_code=#{permissionCode}
+					</if>
+					<if test="permissionName != null">
+						and permission_name=#{permissionName}
+					</if>
+					<if test="permissionRemark != null">
+						and permission_remark=#{permissionRemark}
+					</if>
+					<if test="category != null">
+						and category=#{category}
+					</if>
+					<if test="uri != null">
+						and uri=#{uri}
+					</if>
+					<if test="createUserName != null">
+						and create_user_name=#{createUserName}
+					</if>
+					<if test="createTime != null">
+						and create_time=#{createTime}
+					</if>
+					<if test="editUserName != null">
+						and edit_user_name=#{editUserName}
+					</if>
+					<if test="editTime != null">
+						and edit_time=#{editTime}
+					</if>
+					<if test="flgDelete != null">
+						and flg_delete=#{flgDelete}
+					</if>
+			</where>
+			<if test="orderStr != '' and orderStr != null">
+				order by ${orderStr}
+			</if>
+            <if test="start != null and pageSize != null">
+                limit #{start},#{pageSize}
+            </if>
+		
+		
+	</select>
+
+    <!--分页（模糊查询的公共条件）-->
+    <sql id="likeSelectConditions">
+                <if test="permissionCode != null and permissionCode != '' ">
+                and permission_code <![CDATA[=]]> #{permissionCode}
+                </if>
+                <if test="permissionName != null and permissionName != '' ">
+                and permission_name <![CDATA[=]]> #{permissionName}
+                </if>
+                <if test="permissionRemark != null and permissionRemark != '' ">
+                and permission_remark <![CDATA[=]]> #{permissionRemark}
+                </if>
+                <if test="category != null and category != '' ">
+                and category <![CDATA[=]]> #{category}
+                </if>
+                <if test="uri != null and uri != '' ">
+                and uri <![CDATA[=]]> #{uri}
+                </if>
+                <if test="createUserName != null and createUserName != '' ">
+                and create_user_name <![CDATA[=]]> #{createUserName}
+                </if>
+                <if test="createTime != null  ">
+                and create_time <![CDATA[=]]> #{createTime}
+                </if>
+    </sql>
+
+    <!--分页（模糊）查询-->
+	<select id="likeSelect" parameterType="java.util.HashMap"
+		resultType="java.util.LinkedHashMap">
+			select
+				permission_code as "permissionCode",
+				permission_name as "permissionName",
+				permission_remark as "permissionRemark",
+				category as "category",
+				uri as "uri",
+				create_user_name as "createUserName",
+				create_time as "createTime",
+				permission_id as "permissionId"
+
+                from `basic_permission`
+			
+			<where>
+                <include refid="likeSelectConditions"/>
+			</where>
+			
+			<if test="orderStr != '' and orderStr != null">
+				order by ${orderStr}
+			</if>
+            <if test="start != null and pageSize != null">
+                limit #{start},#{pageSize}
+            </if>
+		
+		
+	</select>
+
+    <!--分页（模糊）查询条数-->
+	<select id="likeSelectCount" parameterType="java.util.HashMap"
+		resultType="java.lang.Long">
+		select 
+			count(1)
+		from `basic_permission`
+		
+		<where>
+            <include refid="likeSelectConditions"/>
+		</where>
+	</select>
+	
+</mapper>

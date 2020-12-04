@@ -1,0 +1,560 @@
+2020-12-05 01:29:11 -Starting AmsApplication on 058 with PID 13936 (started by Administrator in D:\教务管理系统\service\ams)
+2020-12-05 01:29:11 -No active profile set, falling back to default profiles: default
+2020-12-05 01:29:11 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75d4a5c2: startup date [Sat Dec 05 01:29:11 CST 2020]; root of context hierarchy
+2020-12-05 01:29:17 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6ce6826] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration' of type [org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$$EnhancerBySpringCGLIB$$6b426330] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties' of type [org.springframework.boot.autoconfigure.transaction.TransactionProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'platformTransactionManagerCustomizers' of type [org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration$$EnhancerBySpringCGLIB$$83cf0095] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'transactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'transactionAdviceConfig' of type [ams.config.TransactionAdviceConfig$$EnhancerBySpringCGLIB$$5f5ee97e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'txAdvice' of type [org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:17 -Bean 'txAdviceAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-05 01:29:18 -Tomcat initialized with port(s): 8080 (http)
+2020-12-05 01:29:18 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-05 01:29:18 -Starting service [Tomcat]
+2020-12-05 01:29:18 -Starting Servlet Engine: Apache Tomcat/8.5.37
+2020-12-05 01:29:18 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\JAVA\jdk1.8.0_31\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\JAVA\jdk1.8.0_31\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;.]
+2020-12-05 01:29:18 -Initializing Spring embedded WebApplicationContext
+2020-12-05 01:29:18 -Root WebApplicationContext: initialization completed in 6975 ms
+2020-12-05 01:29:18 -Servlet dispatcherServlet mapped to [/]
+2020-12-05 01:29:18 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-12-05 01:29:18 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-12-05 01:29:18 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-12-05 01:29:18 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-12-05 01:29:20 -Mapped "{[/amsClassChoice/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassChoiceController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsClassChoice/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassChoiceController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsClassChoice/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassChoiceController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsClassChoice/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassChoiceController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsClassChoice/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassChoiceController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsClassChoice/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassChoiceController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsClassChoice/exportExcel]}" onto public void ams.controller.AmsClassChoiceController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/amsClassChoice/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassChoiceController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsClassChoice/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassChoiceController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsClass/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsClass/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsClass/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsClass/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsClass/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsClass/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsClass/exportExcel]}" onto public void ams.controller.AmsClassController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/amsClass/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsClass/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsClassController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsExam/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExam/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExam/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExam/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExam/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsExam/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExam/exportExcel]}" onto public void ams.controller.AmsExamController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/amsExam/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsExam/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamDate/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamDateController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamDate/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamDateController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamDate/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamDateController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamDate/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamDateController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamDate/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamDateController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamDate/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamDateController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamDate/exportExcel]}" onto public void ams.controller.AmsExamDateController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/amsExamDate/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamDateController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamDate/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamDateController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamItem/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamItemController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamItem/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamItemController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamItem/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamItemController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamItem/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamItemController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamItem/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamItemController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamItem/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamItemController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamItem/exportExcel]}" onto public void ams.controller.AmsExamItemController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/amsExamItem/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamItemController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsExamItem/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsExamItemController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsGrade/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsGradeController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsGrade/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsGradeController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsGrade/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsGradeController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsGrade/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsGradeController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsGrade/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsGradeController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsGrade/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsGradeController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsGrade/exportExcel]}" onto public void ams.controller.AmsGradeController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/amsGrade/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsGradeController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsGrade/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsGradeController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsStudent/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsStudentController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsStudent/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsStudentController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsStudent/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsStudentController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsStudent/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsStudentController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsStudent/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsStudentController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsStudent/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsStudentController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsStudent/exportExcel]}" onto public void ams.controller.AmsStudentController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/amsStudent/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsStudentController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsStudent/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsStudentController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeachClass/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeachClassController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeachClass/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeachClassController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeachClass/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeachClassController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeachClass/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeachClassController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeachClass/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeachClassController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeachClass/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeachClassController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeachClass/exportExcel]}" onto public void ams.controller.AmsTeachClassController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/amsTeachClass/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeachClassController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeachClass/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeachClassController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeacher/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeacherController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeacher/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeacherController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeacher/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeacherController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeacher/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeacherController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeacher/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeacherController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeacher/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeacherController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeacher/exportExcel]}" onto public void ams.controller.AmsTeacherController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/amsTeacher/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeacherController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/amsTeacher/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.AmsTeacherController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicAccount/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicAccountController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicAccount/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicAccountController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicAccount/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicAccountController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicAccount/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicAccountController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicAccount/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicAccountController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicAccount/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicAccountController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicAccount/exportExcel]}" onto public void ams.controller.BasicAccountController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/basicAccount/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicAccountController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicAccount/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicAccountController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicDepart/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicDepartController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicDepart/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicDepartController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicDepart/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicDepartController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicDepart/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicDepartController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicDepart/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicDepartController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicDepart/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicDepartController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicDepart/exportExcel]}" onto public void ams.controller.BasicDepartController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/basicDepart/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicDepartController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicDepart/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicDepartController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicMajor/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicMajorController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicMajor/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicMajorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicMajor/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicMajorController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicMajor/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicMajorController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicMajor/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicMajorController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicMajor/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicMajorController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicMajor/exportExcel]}" onto public void ams.controller.BasicMajorController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/basicMajor/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicMajorController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicMajor/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicMajorController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicPermission/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicPermissionController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicPermission/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicPermissionController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicPermission/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicPermissionController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicPermission/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicPermissionController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicPermission/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicPermissionController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicPermission/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicPermissionController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicPermission/exportExcel]}" onto public void ams.controller.BasicPermissionController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/basicPermission/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicPermissionController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicPermission/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicPermissionController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRole/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoleController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRole/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoleController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRole/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoleController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRole/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoleController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRole/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoleController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRole/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoleController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRole/exportExcel]}" onto public void ams.controller.BasicRoleController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/basicRole/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoleController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRole/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoleController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRolePermission/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRolePermissionController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRolePermission/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRolePermissionController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRolePermission/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRolePermissionController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRolePermission/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRolePermissionController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRolePermission/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRolePermissionController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRolePermission/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRolePermissionController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRolePermission/exportExcel]}" onto public void ams.controller.BasicRolePermissionController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/basicRolePermission/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRolePermissionController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRolePermission/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRolePermissionController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRout/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRout/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRout/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRout/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRout/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRout/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRout/exportExcel]}" onto public void ams.controller.BasicRoutController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/basicRout/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRout/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRoutPermission/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutPermissionController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRoutPermission/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutPermissionController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRoutPermission/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutPermissionController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRoutPermission/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutPermissionController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRoutPermission/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutPermissionController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRoutPermission/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutPermissionController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicRoutPermission/exportExcel]}" onto public void ams.controller.BasicRoutPermissionController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/basicRoutPermission/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutPermissionController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicRoutPermission/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicRoutPermissionController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicUser/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicUser/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicUser/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicUser/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicUser/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicUser/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicUser/exportExcel]}" onto public void ams.controller.BasicUserController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/basicUser/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicUser/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicUserRole/add],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserRoleController.add(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicUserRole/update],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserRoleController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicUserRole/delete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserRoleController.delete(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicUserRole/select],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserRoleController.select(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicUserRole/batchUpdate],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserRoleController.batchUpdate(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicUserRole/likeSelect],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserRoleController.likeSelect(java.util.Map<java.lang.String, java.lang.Object>)
+2020-12-05 01:29:20 -Mapped "{[/basicUserRole/exportExcel]}" onto public void ams.controller.BasicUserRoleController.exportExcel(java.util.Map<java.lang.String, java.lang.Object>,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:20 -Mapped "{[/basicUserRole/batchAdd],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserRoleController.batchAdd(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/basicUserRole/batchDelete],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.BasicUserRoleController.batchDelete(java.util.List<java.util.Map<java.lang.String, java.lang.Object>>)
+2020-12-05 01:29:20 -Mapped "{[/login/doLogOut],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.LoginController.doLogOut(javax.servlet.http.HttpSession)
+2020-12-05 01:29:20 -Mapped "{[/login/doLogin],methods=[POST]}" onto public ams.entity.CommonResult ams.controller.LoginController.doLogin(ams.entity.User,javax.servlet.http.HttpSession)
+2020-12-05 01:29:20 -Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-12-05 01:29:20 -Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-12-05 01:29:20 -Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-12-05 01:29:20 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-12-05 01:29:20 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-12-05 01:29:21 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-12-05 01:29:21 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-05 01:29:21 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75d4a5c2: startup date [Sat Dec 05 01:29:11 CST 2020]; root of context hierarchy
+2020-12-05 01:29:21 -Mapped URL path [/ams_exam_item/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/basic_depart/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/basic_major/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/ams_class_choice/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/ams_teacher/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/basic_role/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/ams_grade/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/basic_rout/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/ams_exam_date/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/basic_permission/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/basic_account/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/basic_role_permission/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/ams_exam/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/ams_teach_class/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/basic_rout_permission/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/basic_user_role/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/ams_student/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/ams_class/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/basic_user/list] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/welcome] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-12-05 01:29:21 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-05 01:29:21 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-05 01:29:21 -Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-05 01:29:21 -Detected @ExceptionHandler methods in allExceptionHandler
+2020-12-05 01:29:21 -Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-05 01:29:21 -Registering beans for JMX exposure on startup
+2020-12-05 01:29:21 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-12-05 01:29:21 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-12-05 01:29:21 -Starting beans in phase 2147483647
+2020-12-05 01:29:21 -Context refreshed
+2020-12-05 01:29:22 -Found 1 custom documentation plugin(s)
+2020-12-05 01:29:22 -Scanning for api listing references
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_1
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_1
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_1
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_1
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_1
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_2
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_2
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_2
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_2
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_2
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_3
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_3
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_3
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_3
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_3
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_4
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_4
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_4
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_4
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_4
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_5
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_5
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_5
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_5
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_5
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_6
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_6
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_6
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_6
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_6
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_7
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_7
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_7
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_7
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_7
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_8
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_8
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_8
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_8
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_8
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_9
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_9
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_9
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_9
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_9
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_10
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_10
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_10
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_10
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_10
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_11
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_11
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_11
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_11
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_11
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_12
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_12
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_12
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_12
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_12
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_13
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_13
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_13
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_13
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_13
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_14
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_14
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_14
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_14
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_14
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_15
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_15
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_15
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_15
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_15
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_16
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_16
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_16
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_16
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_16
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_17
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_17
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_17
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_17
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_17
+2020-12-05 01:29:22 -Generating unique operation named: addUsingPOST_18
+2020-12-05 01:29:22 -Generating unique operation named: deleteUsingPOST_18
+2020-12-05 01:29:22 -Generating unique operation named: likeSelectUsingPOST_18
+2020-12-05 01:29:22 -Generating unique operation named: selectUsingPOST_18
+2020-12-05 01:29:22 -Generating unique operation named: updateUsingPOST_18
+2020-12-05 01:29:22 -Starting ProtocolHandler ["http-nio-8080"]
+2020-12-05 01:29:22 -Using a shared selector for servlet write/read
+2020-12-05 01:29:22 -Tomcat started on port(s): 8080 (http) with context path '/ams'
+2020-12-05 01:29:22 -Started AmsApplication in 12.24 seconds (JVM running for 14.881)
+2020-12-05 01:30:19 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-12-05 01:30:19 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-12-05 01:30:19 -FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2020-12-05 01:30:19 -======= 开始执行：LoginController — doLogin ========
+2020-12-05 01:30:19 -Retail_HikariCP - Starting...
+2020-12-05 01:30:20 -Retail_HikariCP - Start completed.
+2020-12-05 01:30:20 -==>  Preparing: select user_mobile,password from basic_user where user_mobile= ? and password=? 
+2020-12-05 01:30:20 -==> Parameters: 17821278569(String), 123456(String)
+2020-12-05 01:30:20 -<==      Total: 1
+2020-12-05 01:30:20 -======= 执行结束：LoginController — doLogin ========
+2020-12-05 01:30:29 -======= 开始执行：AmsExamItemController — likeSelect ========
+2020-12-05 01:30:29 -==>  Preparing: select count(1) from `ams_exam_item` 
+2020-12-05 01:30:29 -==> Parameters: 
+2020-12-05 01:30:29 -<==      Total: 1
+2020-12-05 01:30:29 -==>  Preparing: select exam_id as "examId", class_id as "classId", class_exam_num as "classExamNum", exam_item_time as "examItemTime", create_user_name as "createUserName", create_time as "createTime", exam_item_id as "examItemId" from `ams_exam_item` limit ?,? 
+2020-12-05 01:30:29 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:30:29 -<==      Total: 0
+2020-12-05 01:30:29 -======= 执行结束：AmsExamItemController — likeSelect ========
+2020-12-05 01:30:37 -======= 开始执行：BasicDepartController — likeSelect ========
+2020-12-05 01:30:37 -==>  Preparing: select count(1) from `basic_depart` 
+2020-12-05 01:30:37 -==> Parameters: 
+2020-12-05 01:30:37 -<==      Total: 1
+2020-12-05 01:30:37 -==>  Preparing: select depart_name as "departName", depart_code as "departCode", remark as "remark", create_user_name as "createUserName", create_time as "createTime", depart_id as "departId" from `basic_depart` limit ?,? 
+2020-12-05 01:30:37 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:30:37 -<==      Total: 0
+2020-12-05 01:30:37 -======= 执行结束：BasicDepartController — likeSelect ========
+2020-12-05 01:30:44 -======= 开始执行：BasicMajorController — likeSelect ========
+2020-12-05 01:30:44 -==>  Preparing: select count(1) from `basic_major` 
+2020-12-05 01:30:44 -==> Parameters: 
+2020-12-05 01:30:44 -<==      Total: 1
+2020-12-05 01:30:44 -==>  Preparing: select depart_id as "departId", major_code as "majorCode", remark as "remark", create_user_name as "createUserName", create_time as "createTime", major_id as "majorId" from `basic_major` limit ?,? 
+2020-12-05 01:30:44 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:30:44 -<==      Total: 0
+2020-12-05 01:30:44 -======= 执行结束：BasicMajorController — likeSelect ========
+2020-12-05 01:30:48 -======= 开始执行：AmsClassChoiceController — likeSelect ========
+2020-12-05 01:30:48 -==>  Preparing: select count(1) from `ams_class_choice` 
+2020-12-05 01:30:48 -==> Parameters: 
+2020-12-05 01:30:48 -<==      Total: 1
+2020-12-05 01:30:48 -==>  Preparing: select student_id as "studentId", class_id as "classId", create_user_name as "createUserName", create_time as "createTime", class_choice_id as "classChoiceId" from `ams_class_choice` limit ?,? 
+2020-12-05 01:30:48 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:30:48 -<==      Total: 0
+2020-12-05 01:30:48 -======= 执行结束：AmsClassChoiceController — likeSelect ========
+2020-12-05 01:30:52 -======= 开始执行：AmsTeacherController — likeSelect ========
+2020-12-05 01:30:52 -==>  Preparing: select count(1) from `ams_teacher` 
+2020-12-05 01:30:52 -==> Parameters: 
+2020-12-05 01:30:52 -<==      Total: 1
+2020-12-05 01:30:52 -==>  Preparing: select user_id as "userId", teacher_no as "teacherNo", teacher_name as "teacherName", teacher_sex as "teacherSex", teacher_deprat_id as "teacherDepratId", teacher_phone as "teacherPhone", create_user_name as "createUserName", create_time as "createTime", teacher_id as "teacherId" from `ams_teacher` limit ?,? 
+2020-12-05 01:30:52 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:30:52 -<==      Total: 0
+2020-12-05 01:30:52 -======= 执行结束：AmsTeacherController — likeSelect ========
+2020-12-05 01:30:56 -======= 开始执行：BasicRoleController — likeSelect ========
+2020-12-05 01:30:56 -==>  Preparing: select count(1) from `basic_role` 
+2020-12-05 01:30:56 -==> Parameters: 
+2020-12-05 01:30:56 -<==      Total: 1
+2020-12-05 01:30:56 -==>  Preparing: select role_code as "roleCode", role_name as "roleName", remark as "remark", create_user_name as "createUserName", create_time as "createTime", role_id as "roleId" from `basic_role` limit ?,? 
+2020-12-05 01:30:56 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:30:56 -<==      Total: 0
+2020-12-05 01:30:56 -======= 执行结束：BasicRoleController — likeSelect ========
+2020-12-05 01:31:42 -======= 开始执行：AmsExamDateController — likeSelect ========
+2020-12-05 01:31:42 -==>  Preparing: select count(1) from `ams_exam_date` 
+2020-12-05 01:31:42 -==> Parameters: 
+2020-12-05 01:31:42 -<==      Total: 1
+2020-12-05 01:31:42 -==>  Preparing: select exam_name as "examName", exam_code as "examCode", create_user_name as "createUserName", create_time as "createTime", exam_date_id as "examDateId" from `ams_exam_date` limit ?,? 
+2020-12-05 01:31:42 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:31:42 -<==      Total: 0
+2020-12-05 01:31:42 -======= 执行结束：AmsExamDateController — likeSelect ========
+2020-12-05 01:32:09 -======= 开始执行：BasicUserController — likeSelect ========
+2020-12-05 01:32:09 -==>  Preparing: select count(1) from `basic_user` 
+2020-12-05 01:32:09 -==> Parameters: 
+2020-12-05 01:32:09 -<==      Total: 1
+2020-12-05 01:32:09 -==>  Preparing: select user_name as "userName", user_mobile as "userMobile", create_user_name as "createUserName", create_time as "createTime", user_id as "userId" from `basic_user` limit ?,? 
+2020-12-05 01:32:09 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:32:09 -<==      Total: 1
+2020-12-05 01:32:09 -======= 执行结束：BasicUserController — likeSelect ========
+2020-12-05 01:32:14 -======= 开始执行：BasicUserController — select ========
+2020-12-05 01:32:14 -==>  Preparing: select user_name as "userName", user_mobile as "userMobile", create_user_name as "createUserName", create_time as "createTime", user_id as "userId" from `basic_user` WHERE user_id=? 
+2020-12-05 01:32:14 -==> Parameters: 152012563254(Long)
+2020-12-05 01:32:14 -<==      Total: 1
+2020-12-05 01:32:14 -======= 执行结束：BasicUserController — select ========
+2020-12-05 01:32:34 -======= 开始执行：BasicUserController — likeSelect ========
+2020-12-05 01:32:34 -==>  Preparing: select count(1) from `basic_user` 
+2020-12-05 01:32:34 -==> Parameters: 
+2020-12-05 01:32:34 -<==      Total: 1
+2020-12-05 01:32:34 -==>  Preparing: select user_name as "userName", user_mobile as "userMobile", create_user_name as "createUserName", create_time as "createTime", user_id as "userId" from `basic_user` limit ?,? 
+2020-12-05 01:32:34 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:32:34 -<==      Total: 1
+2020-12-05 01:32:34 -======= 执行结束：BasicUserController — likeSelect ========
+2020-12-05 01:32:36 -======= 开始执行：BasicUserController — likeSelect ========
+2020-12-05 01:32:36 -==>  Preparing: select count(1) from `basic_user` 
+2020-12-05 01:32:36 -==> Parameters: 
+2020-12-05 01:32:36 -<==      Total: 1
+2020-12-05 01:32:36 -==>  Preparing: select user_name as "userName", user_mobile as "userMobile", create_user_name as "createUserName", create_time as "createTime", user_id as "userId" from `basic_user` limit ?,? 
+2020-12-05 01:32:36 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:32:36 -<==      Total: 1
+2020-12-05 01:32:36 -======= 执行结束：BasicUserController — likeSelect ========
+2020-12-05 01:32:38 -======= 开始执行：BasicUserController — likeSelect ========
+2020-12-05 01:32:38 -==>  Preparing: select count(1) from `basic_user` 
+2020-12-05 01:32:38 -==> Parameters: 
+2020-12-05 01:32:38 -<==      Total: 1
+2020-12-05 01:32:38 -==>  Preparing: select user_name as "userName", user_mobile as "userMobile", create_user_name as "createUserName", create_time as "createTime", user_id as "userId" from `basic_user` limit ?,? 
+2020-12-05 01:32:38 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:32:38 -<==      Total: 1
+2020-12-05 01:32:38 -======= 执行结束：BasicUserController — likeSelect ========
+2020-12-05 01:32:40 -======= 开始执行：BasicUserController — likeSelect ========
+2020-12-05 01:32:40 -==>  Preparing: select count(1) from `basic_user` 
+2020-12-05 01:32:40 -==> Parameters: 
+2020-12-05 01:32:40 -<==      Total: 1
+2020-12-05 01:32:40 -==>  Preparing: select user_name as "userName", user_mobile as "userMobile", create_user_name as "createUserName", create_time as "createTime", user_id as "userId" from `basic_user` limit ?,? 
+2020-12-05 01:32:40 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:32:40 -<==      Total: 1
+2020-12-05 01:32:41 -======= 执行结束：BasicUserController — likeSelect ========
+2020-12-05 01:32:48 -======= 开始执行：BasicUserController — exportExcel ========
+2020-12-05 01:32:48 -==>  Preparing: select count(1) from `basic_user` 
+2020-12-05 01:32:48 -==> Parameters: 
+2020-12-05 01:32:48 -<==      Total: 1
+2020-12-05 01:32:49 -==>  Preparing: select user_name as "userName", user_mobile as "userMobile", create_user_name as "createUserName", create_time as "createTime", user_id as "userId" from `basic_user` limit ?,? 
+2020-12-05 01:32:49 -==> Parameters: 0(Integer), 5000(Integer)
+2020-12-05 01:32:49 -<==      Total: 1
+2020-12-05 01:32:49 -======= 执行结束：BasicUserController — exportExcel ========
+2020-12-05 01:33:28 -======= 开始执行：BasicDepartController — likeSelect ========
+2020-12-05 01:33:28 -==>  Preparing: select count(1) from `basic_depart` 
+2020-12-05 01:33:28 -==> Parameters: 
+2020-12-05 01:33:28 -<==      Total: 1
+2020-12-05 01:33:28 -==>  Preparing: select depart_name as "departName", depart_code as "departCode", remark as "remark", create_user_name as "createUserName", create_time as "createTime", depart_id as "departId" from `basic_depart` limit ?,? 
+2020-12-05 01:33:28 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:33:28 -<==      Total: 0
+2020-12-05 01:33:28 -======= 执行结束：BasicDepartController — likeSelect ========
+2020-12-05 01:35:58 -======= 开始执行：BasicDepartController — add ========
+2020-12-05 01:35:58 -==>  Preparing: insert into `basic_depart` ( depart_name, depart_code, remark, create_user_name, create_time ) values ( ?, ?, ?, ?, ? ) 
+2020-12-05 01:35:58 -==> Parameters: 计算机与信息工程学院(String), CAIC(String), 计算机与信息工程学院(String), 李博(String), 2020-12-5T01:35:46(String)
+2020-12-05 01:35:58 -Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2020-12-05 01:35:58 -发生系统异常，错误信息为：
+### Error updating database.  Cause: java.sql.SQLException: Field 'depart_id' doesn't have a default value
+### The error may involve ams.dao.IBasicDepartDao.add-Inline
+### The error occurred while setting parameters
+### SQL: insert into `basic_depart`              ( depart_name,                depart_code,                remark,                create_user_name,                create_time )     values ( ?,                ?,                ?,                ?,                ? )
+### Cause: java.sql.SQLException: Field 'depart_id' doesn't have a default value
+; Field 'depart_id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'depart_id' doesn't have a default value
+2020-12-05 01:36:05 -======= 开始执行：BasicDepartController — add ========
+2020-12-05 01:36:05 -==>  Preparing: insert into `basic_depart` ( depart_name, depart_code, remark, create_user_name, create_time ) values ( ?, ?, ?, ?, ? ) 
+2020-12-05 01:36:05 -==> Parameters: 计算机与信息工程学院(String), CAIC(String), 计算机与信息工程学院(String), 李博(String), (String)
+2020-12-05 01:36:05 -发生系统异常，错误信息为：
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '' for column 'create_time' at row 1
+### The error may involve ams.dao.IBasicDepartDao.add-Inline
+### The error occurred while setting parameters
+### SQL: insert into `basic_depart`              ( depart_name,                depart_code,                remark,                create_user_name,                create_time )     values ( ?,                ?,                ?,                ?,                ? )
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '' for column 'create_time' at row 1
+; Data truncation: Incorrect datetime value: '' for column 'create_time' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '' for column 'create_time' at row 1
+2020-12-05 01:39:03 -======= 开始执行：BasicUserController — likeSelect ========
+2020-12-05 01:39:03 -==>  Preparing: select count(1) from `basic_user` 
+2020-12-05 01:39:03 -==> Parameters: 
+2020-12-05 01:39:03 -<==      Total: 1
+2020-12-05 01:39:03 -==>  Preparing: select user_name as "userName", user_mobile as "userMobile", create_user_name as "createUserName", create_time as "createTime", user_id as "userId" from `basic_user` limit ?,? 
+2020-12-05 01:39:03 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:39:03 -<==      Total: 1
+2020-12-05 01:39:03 -======= 执行结束：BasicUserController — likeSelect ========
+2020-12-05 01:39:37 -======= 开始执行：BasicUserController — likeSelect ========
+2020-12-05 01:39:37 -==>  Preparing: select count(1) from `basic_user` 
+2020-12-05 01:39:37 -==> Parameters: 
+2020-12-05 01:39:37 -<==      Total: 1
+2020-12-05 01:39:37 -==>  Preparing: select user_name as "userName", user_mobile as "userMobile", create_user_name as "createUserName", create_time as "createTime", user_id as "userId" from `basic_user` limit ?,? 
+2020-12-05 01:39:37 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:39:37 -<==      Total: 1
+2020-12-05 01:39:37 -======= 执行结束：BasicUserController — likeSelect ========
+2020-12-05 01:39:46 -======= 开始执行：BasicDepartController — likeSelect ========
+2020-12-05 01:39:46 -==>  Preparing: select count(1) from `basic_depart` 
+2020-12-05 01:39:46 -==> Parameters: 
+2020-12-05 01:39:46 -<==      Total: 1
+2020-12-05 01:39:46 -==>  Preparing: select depart_name as "departName", depart_code as "departCode", remark as "remark", create_user_name as "createUserName", create_time as "createTime", depart_id as "departId" from `basic_depart` limit ?,? 
+2020-12-05 01:39:46 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:39:46 -<==      Total: 0
+2020-12-05 01:39:46 -======= 执行结束：BasicDepartController — likeSelect ========
+2020-12-05 01:44:33 -======= 开始执行：AmsExamItemController — likeSelect ========
+2020-12-05 01:44:33 -==>  Preparing: select count(1) from `ams_exam_item` 
+2020-12-05 01:44:33 -==> Parameters: 
+2020-12-05 01:44:33 -<==      Total: 1
+2020-12-05 01:44:33 -==>  Preparing: select exam_id as "examId", class_id as "classId", class_exam_num as "classExamNum", exam_item_time as "examItemTime", create_user_name as "createUserName", create_time as "createTime", exam_item_id as "examItemId" from `ams_exam_item` limit ?,? 
+2020-12-05 01:44:33 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:44:33 -<==      Total: 0
+2020-12-05 01:44:33 -======= 执行结束：AmsExamItemController — likeSelect ========
+2020-12-05 01:44:45 -======= 开始执行：AmsExamItemController — exportExcel ========
+2020-12-05 01:44:45 -==>  Preparing: select count(1) from `ams_exam_item` 
+2020-12-05 01:44:45 -==> Parameters: 
+2020-12-05 01:44:45 -<==      Total: 1
+2020-12-05 01:44:45 -======= 执行结束：AmsExamItemController — exportExcel ========
+2020-12-05 01:45:17 -======= 开始执行：AmsGradeController — likeSelect ========
+2020-12-05 01:45:17 -==>  Preparing: select count(1) from `ams_grade` 
+2020-12-05 01:45:17 -==> Parameters: 
+2020-12-05 01:45:17 -<==      Total: 1
+2020-12-05 01:45:17 -==>  Preparing: select exam_item_id as "examItemId", student_id as "studentId", degree as "degree", create_user_name as "createUserName", create_time as "createTime", grade_id as "gradeId" from `ams_grade` limit ?,? 
+2020-12-05 01:45:17 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:45:17 -<==      Total: 0
+2020-12-05 01:45:17 -======= 执行结束：AmsGradeController — likeSelect ========
+2020-12-05 01:45:22 -======= 开始执行：AmsGradeController — likeSelect ========
+2020-12-05 01:45:22 -==>  Preparing: select count(1) from `ams_grade` WHERE create_time = ? 
+2020-12-05 01:45:22 -==> Parameters: (String)
+2020-12-05 01:45:22 -<==      Total: 1
+2020-12-05 01:45:22 -==>  Preparing: select exam_item_id as "examItemId", student_id as "studentId", degree as "degree", create_user_name as "createUserName", create_time as "createTime", grade_id as "gradeId" from `ams_grade` WHERE create_time = ? limit ?,? 
+2020-12-05 01:45:22 -==> Parameters: (String), 0(Integer), 10(Integer)
+2020-12-05 01:45:22 -<==      Total: 0
+2020-12-05 01:45:23 -======= 执行结束：AmsGradeController — likeSelect ========
+2020-12-05 01:45:25 -======= 开始执行：AmsGradeController — exportExcel ========
+2020-12-05 01:45:25 -==>  Preparing: select count(1) from `ams_grade` 
+2020-12-05 01:45:25 -==> Parameters: 
+2020-12-05 01:45:25 -<==      Total: 1
+2020-12-05 01:45:25 -======= 执行结束：AmsGradeController — exportExcel ========
+2020-12-05 01:45:38 -======= 开始执行：AmsGradeController — likeSelect ========
+2020-12-05 01:45:38 -==>  Preparing: select count(1) from `ams_grade` 
+2020-12-05 01:45:38 -==> Parameters: 
+2020-12-05 01:45:38 -<==      Total: 1
+2020-12-05 01:45:38 -==>  Preparing: select exam_item_id as "examItemId", student_id as "studentId", degree as "degree", create_user_name as "createUserName", create_time as "createTime", grade_id as "gradeId" from `ams_grade` limit ?,? 
+2020-12-05 01:45:38 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:45:38 -<==      Total: 0
+2020-12-05 01:45:38 -======= 执行结束：AmsGradeController — likeSelect ========
+2020-12-05 01:47:12 -======= 开始执行：AmsGradeController — likeSelect ========
+2020-12-05 01:47:12 -==>  Preparing: select count(1) from `ams_grade` 
+2020-12-05 01:47:12 -==> Parameters: 
+2020-12-05 01:47:13 -<==      Total: 1
+2020-12-05 01:47:13 -==>  Preparing: select exam_item_id as "examItemId", student_id as "studentId", degree as "degree", create_user_name as "createUserName", create_time as "createTime", grade_id as "gradeId" from `ams_grade` limit ?,? 
+2020-12-05 01:47:13 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 01:47:13 -<==      Total: 0
+2020-12-05 01:47:13 -======= 执行结束：AmsGradeController — likeSelect ========
