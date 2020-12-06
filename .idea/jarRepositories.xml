@@ -7,6 +7,16 @@
       <option name="url" value="https://maven.aliyun.com/nexus/content/groups/public" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="rdc-snapshots" />
+      <option name="name" value="rdc-snapshots" />
+      <option name="url" value="https://packages.aliyun.com/maven/repository/2055982-snapshot-tvGY2k/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="rdc-releases" />
+      <option name="name" value="rdc-releases" />
+      <option name="url" value="https://packages.aliyun.com/maven/repository/2055982-release-5CDz0y/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="rdc-releases" />
       <option name="name" value="rdc-releases" />
       <option name="url" value="https://packages.aliyun.com/maven/repository/2055778-release-lsoFi4/" />

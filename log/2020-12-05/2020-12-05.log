@@ -558,3 +558,31 @@
 2020-12-05 01:47:13 -==> Parameters: 0(Integer), 10(Integer)
 2020-12-05 01:47:13 -<==      Total: 0
 2020-12-05 01:47:13 -======= 执行结束：AmsGradeController — likeSelect ========
+2020-12-05 03:51:50 -======= 开始执行：AmsExamItemController — likeSelect ========
+2020-12-05 03:51:50 -==>  Preparing: select count(1) from `ams_exam_item` 
+2020-12-05 03:51:50 -==> Parameters: 
+2020-12-05 03:51:50 -<==      Total: 1
+2020-12-05 03:51:50 -==>  Preparing: select exam_id as "examId", class_id as "classId", class_exam_num as "classExamNum", exam_item_time as "examItemTime", create_user_name as "createUserName", create_time as "createTime", exam_item_id as "examItemId" from `ams_exam_item` limit ?,? 
+2020-12-05 03:51:50 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 03:51:50 -<==      Total: 0
+2020-12-05 03:51:50 -======= 执行结束：AmsExamItemController — likeSelect ========
+2020-12-05 03:52:49 -======= 开始执行：BasicRoleController — likeSelect ========
+2020-12-05 03:52:49 -==>  Preparing: select count(1) from `basic_role` 
+2020-12-05 03:52:49 -==> Parameters: 
+2020-12-05 03:52:49 -<==      Total: 1
+2020-12-05 03:52:49 -==>  Preparing: select role_code as "roleCode", role_name as "roleName", remark as "remark", create_user_name as "createUserName", create_time as "createTime", role_id as "roleId" from `basic_role` limit ?,? 
+2020-12-05 03:52:49 -==> Parameters: 0(Integer), 10(Integer)
+2020-12-05 03:52:49 -<==      Total: 0
+2020-12-05 03:52:49 -======= 执行结束：BasicRoleController — likeSelect ========
+2020-12-05 03:56:09 -======= 开始执行：LoginController — doLogOut ========
+2020-12-05 03:56:09 -======= 执行结束：LoginController — doLogOut ========
+2020-12-05 03:56:16 -======= 开始执行：LoginController — doLogin ========
+2020-12-05 03:56:16 -==>  Preparing: select user_mobile,password from basic_user where user_mobile= ? and password=? 
+2020-12-05 03:56:16 -==> Parameters: (String), (String)
+2020-12-05 03:56:16 -<==      Total: 0
+2020-12-05 03:56:16 -======= 执行结束：LoginController — doLogin ========
+2020-12-05 08:18:13 -======= 开始执行：LoginController — doLogin ========
+2020-12-05 08:18:13 -==>  Preparing: select user_mobile,password from basic_user where user_mobile= ? and password=? 
+2020-12-05 08:18:13 -==> Parameters: 17821278569(String), 123456(String)
+2020-12-05 08:18:13 -<==      Total: 1
+2020-12-05 08:18:13 -======= 执行结束：LoginController — doLogin ========
